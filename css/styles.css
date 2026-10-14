@@ -336,8 +336,27 @@ code {
 .hero-meta {
   font-size: 1.02rem;
   opacity: 0.92;
-  margin: 0 0 40px;
+  margin: 0 0 24px;
   letter-spacing: 0.02em;
+}
+.hero-comp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-gold);
+  color: var(--color-charcoal);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  padding: 11px 22px;
+  border-radius: 999px;
+  margin: 0 0 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+.hero-comp-badge svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 .hero-actions {
   display: flex;
