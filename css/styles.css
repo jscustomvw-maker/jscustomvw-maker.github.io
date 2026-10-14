@@ -571,6 +571,43 @@ code {
   border-radius: 999px;
 }
 
+/* Coming-soon gallery panel — used instead of a full placeholder grid when
+   a listing has no address/photos/specifics confirmed yet */
+.coming-soon-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 32px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--color-sand), var(--color-sage));
+  text-align: center;
+}
+.coming-soon-icon {
+  width: 56px;
+  height: 56px;
+  color: var(--color-white);
+  animation: coming-soon-pulse 2.4s ease-in-out infinite;
+}
+@keyframes coming-soon-pulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+.coming-soon-text {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-white);
+  margin: 0;
+}
+.coming-soon-subtext {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
 /* ---------- Virtual Tour ---------- */
 
 .tour-embed {
@@ -861,6 +898,14 @@ html.js-reveal .reveal.is-visible {
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, var(--tile-a, #e8e1d4), var(--tile-b, #c9bfa3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listing-card-media-placeholder .coming-soon-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--color-white);
 }
 
 .listing-card-status {
