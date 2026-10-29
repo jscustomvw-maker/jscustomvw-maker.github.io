@@ -728,6 +728,47 @@ code {
   margin-top: 3px;
 }
 
+.financing-callout {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 900px;
+  margin: 48px auto 0;
+  padding: 28px 32px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  scroll-margin-top: 110px;
+}
+.financing-callout svg {
+  width: 40px;
+  height: 40px;
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+.financing-callout-text { flex: 1; }
+.financing-callout-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--color-charcoal);
+  margin-bottom: 6px;
+}
+.financing-callout-text p {
+  margin: 0;
+  color: var(--color-charcoal-soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.financing-callout .btn { flex-shrink: 0; }
+@media (max-width: 720px) {
+  .financing-callout {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
